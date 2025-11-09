@@ -1,24 +1,37 @@
-# ⚡ Component Portfolio
+# 🌟 Component Portfolio
 
-A curated collection of production-ready, accessible, and performant React components with interactive demos.
+A spectacular collection of production-ready, accessible, and performant React components with interactive demos and real-time controls.
+
+## 🚀 [**Live Demo**](https://component-portfolio.netlify.app/)
 
 ![Component Status](https://img.shields.io/badge/status-production--ready-success)
+![React](https://img.shields.io/badge/React-18+-blue)
 ![Browser Support](https://img.shields.io/badge/browsers-Chrome%2090%2B%20%7C%20Safari%2014%2B%20%7C%20Firefox%2088%2B-blue)
 ![Performance](https://img.shields.io/badge/performance-60fps-brightgreen)
+![Theme Support](https://img.shields.io/badge/themes-light%20%7C%20dark-purple)
 
-## ✨ Features
+## ✨ Featured Components
 
-### Core Functionality
-- **Realistic Refraction Physics**: SVG filter-based distortion that mimics light bending through water
-- **Momentum-Based Movement**: Smooth easing with velocity-based physics (not instant cursor following)
-- **Dynamic Intensity**: Refraction strength adjusts based on movement speed
-- **Liquid Wobble Effect**: Subtle shape morphing during movement
+### 🌊 Overlapping Hero Section
+- **Dynamic Wave Generation**: Mathematically generated SVG waves with real-time controls
+- **Wave Separation Control**: 0-100% separation between wave layers for visual depth
+- **Multiple Presets**: Default, diagonal, mountains, steps, and zigzag wave patterns
+- **Responsive Amplitude**: Dramatic peaks and valleys that scale with user input
+- **Smooth Animations**: Flowing, natural wave curves without bumpy transitions
 
-### Visual Effects
-- **Caustic Lighting**: Animated light patterns at the blob's rim
-- **Progressive Intensity**: Stronger distortion at center, fading toward edges
-- **Inner Glow**: Simulates light gathering through the lens
-- **Layered Shadows**: Multi-level depth perception
+### 💧 Liquid Refraction Lens
+- **Realistic Physics**: SVG filter-based distortion mimicking light bending through water
+- **Interactive Controls**: Real-time adjustment of refraction, turbulence, and visual effects
+- **Caustic Lighting**: Animated light patterns with customizable colors
+- **Momentum-Based Movement**: Smooth easing with velocity-based physics
+- **Performance Optimized**: 60fps target with GPU acceleration
+
+### 🎨 Spectacular 404 Page
+- **Animated Gradient Text**: Color-shifting 404 with glow effects
+- **Floating Particles**: 50 animated particles with physics-based movement
+- **Professional Icons**: Elegant Lucide icons with pulse animations
+- **Responsive Design**: Scales beautifully from mobile to desktop
+- **Theme-Aware**: Perfect contrast in both light and dark modes
 
 ### Accessibility
 - ✅ **Keyboard Navigation**: Arrow keys to move, Space/Enter to reset
@@ -33,88 +46,119 @@ A curated collection of production-ready, accessible, and performant React compo
 - **CSS Containment**: Isolated rendering for better performance
 - **Will-change Hints**: GPU acceleration for transforms
 
+## 🚀 Quick Start
+
+### Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/RCushmaniii/component-portfolio.git
+cd component-portfolio
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+### Build for Production
+
+```bash
+# Build optimized bundle
+npm run build
+
+# Preview production build
+npm run preview
+```
+
 ## 📁 Project Structure
 
 ```
 component-portfolio/
-├── index.html          # Main HTML structure with SVG filters
-├── styles.css          # Complete styling with animations
-├── script.js           # JavaScript class with physics engine
-├── images/
-│   └── background-image.webp  # Background image for refraction
-└── README.md           # This file
+├── public/
+│   ├── images/           # Static assets and component images
+│   └── index.html        # HTML entry point
+├── src/
+│   ├── components/       # Reusable UI components
+│   ├── contexts/         # React contexts (Theme, etc.)
+│   ├── demos/           # Component demonstrations
+│   ├── pages/           # Application pages
+│   ├── data/            # Component metadata
+│   └── lib/             # Utility functions
+├── docs/                # Comprehensive documentation
+└── README.md            # This file
 ```
 
-## 🚀 Quick Start
+## 📚 Documentation
 
-### 1. Open the Component
+- 🌟 **[Project Overview](./docs/PROJECT_OVERVIEW.md)** - Complete project vision, achievements, and roadmap
+- 📖 **[Latest Enhancements](./docs/LATEST_ENHANCEMENTS.md)** - Recent improvements and new features
+- 🏗️ **[Technical Architecture](./docs/TECHNICAL_ARCHITECTURE.md)** - System design and implementation details  
+- 🧩 **[Component Development Guide](./docs/COMPONENT_DEVELOPMENT_GUIDE.md)** - Best practices for building components
+- 📋 **[Implementation Guide](./docs/IMPLEMENTATION_GUIDE.md)** - Step-by-step implementation instructions
+- 🔄 **[Before/After Comparison](./docs/BEFORE_AFTER_COMPARISON.md)** - Visual improvements showcase
 
-Simply open `index.html` in a modern web browser:
+## 🎮 Interactive Features
 
-```bash
-# Using a local server (recommended)
-npx serve .
+### Component Controls
+- **Real-time Sliders**: Adjust wave amplitude, frequency, and separation
+- **Color Pickers**: Customize wave colors and visual effects  
+- **Preset Buttons**: Quick configuration changes
+- **Export/Import**: Save and load component configurations
 
-# Or directly open the file
-open index.html  # macOS
-start index.html # Windows
-```
+### Navigation
+- **Mouse/Touch**: Interactive drag and hover effects
+- **Keyboard**: Tab navigation with arrow key controls
+- **Responsive**: Optimized for all device sizes
 
-### 2. Interact with the Lens
+## 🛠️ Technology Stack
 
-- **Mouse**: Hover over the image and drag the droplet
-- **Touch**: Tap and drag on mobile devices
-- **Keyboard**: Tab to focus, then use arrow keys to move
+### Frontend
+- **React 18+**: Modern React with hooks and concurrent features
+- **React Router**: Client-side routing and navigation
+- **Tailwind CSS**: Utility-first styling framework
+- **Lucide React**: Beautiful, customizable icons
 
-## 🎨 Customization Guide
+### Build Tools
+- **Vite**: Lightning-fast build tool and dev server
+- **PostCSS**: CSS processing and optimization
+- **ESLint**: Code linting and quality assurance
 
-### Adjust Refraction Intensity
+### Deployment
+- **Netlify**: Continuous deployment and hosting
+- **GitHub Actions**: Automated testing and deployment
 
-Edit the SVG filter in `index.html`:
+## 🎨 Component Customization
 
-```html
-<feDisplacementMap 
-  scale="50"  <!-- Change this value (20-100) -->
-  ...
+### Wave Configuration
+```jsx
+<OverlappingHero
+  waveAmplitude={75}      // 0-100: Wave height
+  waveFrequency={3}       // 1-10: Number of waves  
+  waveSeparation={40}     // 0-100: Layer separation
+  waveColor1="#8b5cf6"    // Primary wave color
+  waveColor2="#ec4899"    // Secondary wave color
 />
 ```
 
-### Change Blob Size
-
-Modify CSS in `styles.css`:
-
-```css
-.refraction-blob {
-  width: 220px;  /* Adjust size */
-  height: 220px;
-}
+### Refraction Effects
+```jsx
+<LiquidRefractionLens
+  intensity={60}          // 0-100: Distortion strength
+  turbulence={8}          // 1-20: Noise complexity
+  causticIntensity={75}   // 0-100: Light effect strength
+  backgroundColor="#1e293b" // Background color
+/>
 ```
 
-### Adjust Movement Physics
+### Theme Integration
+```jsx
+// Components automatically adapt to theme context
+const { theme } = useTheme()
 
-Edit JavaScript in `script.js`:
-
-```javascript
-this.friction = 0.15; // Higher = more responsive (0-1)
-```
-
-### Customize Colors
-
-Change the caustic light colors:
-
-```css
-.blob-caustics {
-  background: conic-gradient(
-    from 0deg,
-    transparent 0%,
-    rgba(147, 197, 253, 0.4) 15%,  /* Blue */
-    transparent 30%,
-    rgba(196, 181, 253, 0.4) 45%,  /* Purple */
-    transparent 60%,
-    rgba(167, 243, 208, 0.3) 75%,  /* Green */
-    transparent 90%
-  );
-}
+// Manual theme override
+<Component forceTheme="dark" />
 ```
 
 ## 🧪 Testing Checklist
@@ -274,4 +318,28 @@ To improve this component:
 
 **Built with ❤️ following modern web standards and accessibility guidelines**
 
-Last updated: 2025
+## 🤝 Contributing
+
+We welcome contributions! Please see our [Component Development Guide](./docs/COMPONENT_DEVELOPMENT_GUIDE.md) for detailed guidelines on:
+
+- Code quality standards
+- Accessibility requirements  
+- Performance benchmarks
+- Testing procedures
+- Documentation standards
+
+## 📄 License
+
+This project is available for educational and commercial use. See individual component documentation for specific usage guidelines.
+
+## 🙏 Acknowledgments
+
+Built with modern web technologies and a commitment to accessibility, performance, and spectacular user experiences.
+
+---
+
+**⭐ Star this repository if you found it helpful!**
+
+**🔗 Live Demo: [https://component-portfolio.netlify.app/](https://component-portfolio.netlify.app/)**
+
+*Last updated: November 2025*
