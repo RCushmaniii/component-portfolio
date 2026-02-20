@@ -12,7 +12,6 @@ category: "Tools"
 tech_stack:
   - "JavaScript"
   - "TODO: Add tech"
-thumbnail: ""
 status: "Production"
 
 # === DETAIL PAGE ===
@@ -22,14 +21,12 @@ key_features:
   - "TODO: Feature 1 with measurable impact"
   - "TODO: Feature 2 explaining capability"
   - "TODO: Feature 3 showing value"
-metrics: []
 
 # === LINKS ===
 demo_url: ""
 live_url: ""
 
 # === OPTIONAL ===
-hero_images: []
 tags:
   - "todo"
 date_completed: "2025-11"
